@@ -49,7 +49,7 @@ if st.button('Prediksi'):
         
         # Visualisasi probabilitas
         fig, ax = plt.subplots()
-        classes = ['karier seorang pemain kurang dari 5 tahun', 'karier seorang pemain memiliki karier selama 5 tahun atau lebih']
+        classes = ['karier pemain > 5 tahun', 'karier pemain < 5 tahun ']
         ax.bar(classes, probabilities[0])
         ax.set_ylabel('Probabilitas')
         ax.set_title('Probabilitas Prediksi')
